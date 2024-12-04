@@ -1,0 +1,24 @@
+theme = 'horizon-dark'
+
+[editor]
+line-number = 'relative'
+bufferline = 'multiple'
+
+[editor.indent-guides]
+render = true
+
+[editor.file-picker]
+hidden = false
+
+[keys.normal]
+'C-x' = ['keep_primary_selection', 'collapse_selection']
+'C-c' = [':buffer-next']
+'C-v' = [':buffer-close!']
+'C-r' = [':redraw']
+'C-g' = [':new', ':insert-output lazygit', ':buffer-close-all!', ':redraw']
+
+[keys.insert]
+'C-x' = 'normal_mode'
+
+[keys.select]
+'C-x' = ['normal_mode', 'keep_primary_selection', 'collapse_selection']
